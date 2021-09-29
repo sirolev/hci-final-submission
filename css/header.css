@@ -1,0 +1,128 @@
+
+header {
+    max-width: 980px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-icon {
+    height: 53px;
+}
+
+.nav-item {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    transition: color 0.2s;
+}
+
+.nav-item img{
+    height: 21px;
+    color: #707070;
+    filter: invert(35%) sepia(29%) saturate(0%) hue-rotate(174deg) brightness(117%) contrast(86%);
+    padding-right: 5px;
+    transition: filter 0.2s;
+}
+
+.nav-item:hover {
+    color: #979797
+}
+
+.nav-item:hover img{
+    filter: invert(76%) sepia(2%) saturate(0%) hue-rotate(165deg) brightness(86%) contrast(86%);
+}
+
+#search-box {
+    width: 290px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: left;;
+    transition: color 0.2s;
+}
+
+#search-box a img {
+    width: 23px;
+    margin: 0px 10px;
+    margin-top: 2px;
+}
+
+#search-box input[type="text"] {
+    height: 90%;
+    width: 90%;
+    border: none;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+#btn-signin {
+    width: 110px;
+    height: 40px;
+    background-color: #7C889B;
+    color: white;
+    font-size: 16px;
+    border-radius: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+#btn-signin:hover {
+    background-color: #5b6f8b;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid #cecece;
+}
+
+@media (max-width: 992px) {
+    #nav-item-about {
+        display: none;
+    }
+
+    header {
+        padding: 0px 15px;
+    }
+
+    #search-box {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 678px) {
+    #nav-item-library {
+        display: none;
+    }
+}
+
+@media (max-width: 578px) {
+    #nav-item-rankings {
+        display: none;
+    }
+}
+
+@media (max-width: 478px) {
+    #nav-item-browse {
+        display: none;
+    }
+
+    #search-box {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 378px) {
+    #nav-item-signin {
+        display: none;
+    }
+}

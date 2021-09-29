@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Improvments:
+            1. Implemented ability to hover over featured books to view more details in highlight pannel.
+            2. Added more visual appeal by making many links transition colors when hovering over them.
+            3. Cleanup and final tweaks done to the code. I was happy with the visual side of things, and I
+                felt that if i were to make some changes for the sake of making a change, it would only
+                be counter productive and make the website worse.
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage layout for book hosting website">
+    <meta name="keywords" content="homepage, layout, book, novel, read">
+    <meta name="author" content="Alex Siryy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/featured.css" rel="stylesheet" type="text/css">
+    <link href="css/ranked.css" rel="stylesheet" type="text/css">
+    <link href="css/tags.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <title>Novel Website</title>
+</head>
+<body>
+    <header>
+        <a href="#!">
+            <img id="header-icon" src="img/icons/icon.png" alt="website icon">
+        </a>
+        <a class="nav-item" id="nav-item-browse" href="#!">
+            <img src="img/icons/browse.svg" alt="browse"> Browse
+        </a>
+        <a class="nav-item" id="nav-item-rankings" href="#!">
+            <img src="img/icons/rankings.svg" alt="browse" style="padding-right: 1px;"> Rankings
+        </a>
+        <a class="nav-item" id="nav-item-library" href="#!">
+            <img src="img/icons/library.svg" alt="library"> Library
+        </a>
+        <div id="search-box">
+            <input type="text" name="search" placeholder="Search...">
+            <a href="#!"><img src="img/icons/search.svg" alt="search"></a>
+        </div>
+        <a class="nav-item" id="nav-item-about" href="#!">
+            <img src="img/icons/about.svg" alt="about"> About
+        </a>
+        <a href="#!" id="nav-item-signin">
+            <div id="btn-signin">SIGN IN</div>
+        </a>
+    </header>
+    <hr>
+
+    <main>
+        <div id="featured-heading" class="section-heading">
+            <div class="section-content"><p>Featured</p><a href="#!">MORE</a></div>
+            <hr>
+        </div>
+        <section id="featured-content">
+            <div id="featured-highlight-container">
+                <section id="featured-highlight">
+                    <img id="featured-banner" src="img/banners/lotm_default.jpg" alt="highlight banner">
+                    <a href="#!"><h2 id="featured-title">Lord of the Mysteries</h2></a>
+                    <p id="featured-details">Fantasy   ·   <span style="color: #242424;">Cuttlefish That Loves Diving</span></p>
+                    <p id="featured-p1">With the rising tide of steam power and machinery, who can come close to being a Beyonder? Shrouded in the fog of history and darkness, who or what is the lurking evil that murmurs into our ears?</p>
+                    <p id="featured-p2">Waking up to be faced with a string of mysteries, Zhou Mingrui finds himself reincarnated as Klein Moretti in an alternate Victorian era world where he sees a world filled with machinery, cannons, dreadnoughts, airships, difference machines, as well as Potions, Divination, Hexes, Tarot Cards, Sealed Artifacts… </p>
+                </section>
+            </div>
+            <section id="featured-list">
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/release_that_witch.jpg" alt="release that witch book cover" data-id="RTW">
+                        <h3>Release that Witch</h3>
+                    </a>
+                    <p>Fantasy</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/lord_of_the_mysteries.jpg" alt="lord of the mysteries book cover" data-id="LOTM">
+                        <h3>Lord of the Mysteries</h3>
+                    </a>
+                    <p>Fantasy</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/a_will_eternal.jpg" alt="a will eternal book cover" data-id="AWE">
+                        <h3>A Will Eternal</h3>
+                    </a>
+                    <p>Eastern Fantasy</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+                <div class="featured-item">
+                    <a href="#!">
+                        <img src="img/covers/empty.png" alt="empty book cover" data-id="NULL">
+                        <h3>Book Title</h3>
+                    </a>
+                    <p>Genre</p>
+                </div>
+            </section>
+        </section>
+
+        <div id="ranked-heading" class="section-heading">
+            <div class="section-content"><p>Top Ranked</p><a href="#!">MORE</a></div>
+            <hr>
+        </div>
+        <section id="ranked-content">
+            <section class="ranked-section">
+                <div class=ranked-title>
+                    <p>All Time</p>
+                </div>
+                <div class="ranked-list">
+                    <div class="ranked-item">
+                        <img src="img/covers/lord_of_the_mysteries.jpg" alt="Lord of the Mysteries book cover">
+                        <p>01</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Lord of the Mysteries</h3></a>
+                            <p>Fantasy</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/release_that_witch.jpg" alt="Release that Witch book cover">
+                        <p>02</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Release that Witch</h3></a>
+                            <p>Fantasy</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>4.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/a_will_eternal.jpg" alt="A Will Eternal book cover">
+                        <p>03</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>A Will Eternal</h3></a>
+                            <p>Eastern Fantasy</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>4.3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>04</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>05</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>06</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ranked-section">
+                <div class=ranked-title>
+                    <p>Monthly</p>
+                </div>
+                <div class="ranked-list">
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>01</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>02</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>03</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>04</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>05</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>06</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ranked-section">
+                <div class=ranked-title>
+                    <p>New Releases</p>
+                </div>
+                <div class="ranked-list">
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>01</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>02</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>03</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>04</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>05</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranked-item">
+                        <img src="img/covers/empty.png" alt="empty book cover">
+                        <p>06</p>
+                        <div class="ranked-item-details">
+                            <a href="#!"><h3>Book Title</h3></a>
+                            <p>Genre</p>
+                            <div class="ranked-item-rating">
+                                <img src="img/icons/star.svg" alt="star rating">
+                                <p>0.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div id="tags-heading" class="section-heading">
+            <div class="section-content"><p>Popular Tags</p><a href="#!">MORE</a></div>
+            <hr>
+        </div>
+        <section id="tags-content">
+            <div><a href="#!">ACTION</a></div>
+            <div><a href="#!">ADVENTURE</a></div>
+            <div><a href="#!">SYSTEM</a></div>
+            <div><a href="#!">MODERN</a></div>
+            <div><a href="#!">COMEDEY</a></div>
+            <div><a href="#!">CULTIVATION</a></div>
+            <div><a href="#!">KINGDOM</a></div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footer-content">
+            <section id="footer-left">
+                <h2>Company Name</h2>
+                <div id="footer-icons">
+                    <a href="#!"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                    <a href="#!"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                    <a href="#!"><img src="img/icons/reddit.svg" alt="reddit"></a>
+                    <a href="#!"><img src="img/icons/twitter.svg" alt="twitter"></a>
+                    <a href="#!"><img src="img/icons/youtube.svg" alt="youtube"></a>
+                </div>
+            </section>
+            <section id="footer-resources" class="footer-list">
+                <h2>Resources</h2>
+                <a href="#!">About</a>
+                <a href="#!">Contact</a>
+                <a href="#!">Privacy Policy</a>
+                <a href="#!">Terms of Use</a>
+            </section>
+            <section id="footer-directory" class="footer-list">
+                <h2>Directory</h2>
+                <a href="#!">Browse</a>
+                <a href="#!">Rankings</a>
+                <a href="#!">Library</a>
+                <a href="#!">Sign In</a>
+            </section>
+        </section>
+    </footer>
+
+    <script src="js/featured.js"></script>
+</body>
+</html>
