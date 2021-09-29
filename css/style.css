@@ -1,64 +1,3 @@
-
-/*
-    Note: Responsive design supports down to a minimum screen width of 320px
-
-
-    Responses to questions from requirment 2 and 3
-    -------------------------------------------------------
-
-    How did you decide on your site’s color scheme?
-    -------
-        Partially inspired by the website whos layout I was refercing when designing mine.
-        Partially dervived from testing out different colors to find what looks good.
-        I also like the white/gray/blue pallet, as it looks professional and not overbearing.
-        I choose to also include a little red because the icon I found has red, and it added some spice to the look.
-
-
-    Provide me with the color palette you will use within your site and provide the hexadecimals values for each color.
-    -------
-        My pallete mostly consists of monochromatic blue and gray colors, and a little red.
-        dark gray (heading text): #242424
-        light gray (hr and text): #E6E6E6
-        light gray (hr): #cecece 
-        light gray (text): #929292
-        blue (certain links): #0055FF
-        pale gray/blue (text background and placeholders): #F6F7FC
-        dark blue (footer background): #25253D
-        white (text and background): #25253D
-        opaque white (text): #ffffffb0
-        medium gray (header text/icons): #707070
-        medium gray/blue (login button): #7C889B
-        opaque black (box shadow: #00000014;
-        red/color (ranked section title background): #E37878
-
-
-    What areas of your site will be impacted by your color choice?.
-    -------
-        I think all areas of the website are impacted by my color choices, and I listed how each color is used in my previous response
-
-
-    What font(s) will you use for the <body>, <p> and <h1> - <h6> HTML tags? .
-    -------
-        I used the same font across the entire page, which was "Segoe UI".
-
-    
-    What are the different weights and sizes of the heading and paragraph tags?
-    -------
-        For headings, I typically used weight 600 which is semibold. For text, I mostly left it the default weight (normal).
-        For the main section headings, I used font size 27px.
-        For book titles I used font size 15px.
-        For many <a> tags, like the links in the header or in the footer, I used font size 16px.
-        For a couple large paragraphs in the featured highlight, I used font size 11px.
-        For the text specifing the book genre, I used font size 12px.
-
-
-    What is your desired line-height, word-spacing, and letter-spacing?
-    -------
-        I didn't modify any of these as I haven't had a need too.
-*/
-
-
-/* This is the only style rule where I defined a font. The font is Segoe UI. */
 body, html {
     margin: 0;
     padding: 0;
@@ -69,7 +8,7 @@ main {
     max-width: 980px;
     margin: auto;
     display: grid;
-    grid-template: 85px auto 90px auto 125px auto / 1fr; /* 450px --- 95px */
+    grid-template: 85px auto 90px auto 125px auto / 1fr;
 }
 
 .section-heading {
